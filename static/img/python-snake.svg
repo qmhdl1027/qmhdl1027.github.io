@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4584b6"/>
+      <stop offset="50%" stop-color="#366f9b"/>
+      <stop offset="100%" stop-color="#2a5d8a"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd43b"/>
+      <stop offset="100%" stop-color="#ffdc6e"/>
+    </linearGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cccccc"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="200" cy="150" r="140" fill="#f7f9fb" stroke="#e0e6ec" stroke-width="2"/>
+
+  <!-- Snake body (S-curve) -->
+  <path d="M 80,220 Q 110,180 140,200 T 200,180 Q 230,160 260,190 T 320,150"
+        stroke="url(#bodyGrad)" stroke-width="32" fill="none" stroke-linecap="round"/>
+
+  <!-- Body pattern (diamonds) -->
+  <g fill="#5a9bc9" opacity="0.5">
+    <circle cx="100" cy="210" r="5"/>
+    <circle cx="130" cy="200" r="5"/>
+    <circle cx="160" cy="195" r="5"/>
+    <circle cx="190" cy="185" r="5"/>
+    <circle cx="220" cy="180" r="5"/>
+    <circle cx="250" cy="185" r="5"/>
+    <circle cx="280" cy="175" r="5"/>
+    <circle cx="305" cy="160" r="5"/>
+  </g>
+
+  <!-- Head (yellow python logo style) -->
+  <path d="M 310,140 Q 340,130 345,150 Q 350,170 325,175 Q 315,170 312,158 Z"
+        fill="url(#headGrad)" stroke="#d4a017" stroke-width="1.5"/>
+
+  <!-- Lower jaw -->
+  <path d="M 315,170 Q 335,180 340,165"
+        fill="#ffdc6e" stroke="#d4a017" stroke-width="1.5"/>
+
+  <!-- Eye -->
+  <circle cx="330" cy="150" r="6" fill="url(#eyeGrad)"/>
+  <circle cx="331" cy="151" r="3" fill="#1a1a1a"/>
+  <circle cx="332" cy="150" r="1" fill="#ffffff"/>
+
+  <!-- Nostril -->
+  <circle cx="345" cy="148" r="1.5" fill="#7a5d00"/>
+
+  <!-- Tongue -->
+  <path d="M 348,165 L 360,170 L 358,168 L 360,172 L 348,167"
+        stroke="#d63031" stroke-width="1.5" fill="#d63031"/>
+
+  <!-- Tail tapering -->
+  <path d="M 78,222 Q 72,225 68,228"
+        stroke="url(#bodyGrad)" stroke-width="20" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M 68,228 Q 64,230 60,232"
+        stroke="url(#bodyGrad)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 60,232 Q 56,233 52,234"
+        stroke="url(#bodyGrad)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Python logo style - two small dots on head -->
+  <circle cx="320" cy="148" r="1.5" fill="#7a5d00"/>
+
+  <!-- Subtle shadow -->
+  <ellipse cx="200" cy="270" rx="120" ry="6" fill="#000000" opacity="0.08"/>
+</svg>
