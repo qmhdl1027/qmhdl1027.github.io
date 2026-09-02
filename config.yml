@@ -1,36 +1,34 @@
-baseURL: https://fivestone.github.io/hugo-papermod-beginning
-title: 新的 Hugo 站点 # 网站标题
+baseURL: https://qmhdl1027.github.io/
+title: qmhdl1027 的博客
 theme: [PaperMod]
-languageCode: 'en'
+languageCode: 'zh-cn'
 
-enableInlineShortcodes: true # 允许内联短码
-enableEmoji: true # 允许使用 Emoji 表情，建议 true
-enableRobotsTXT: true # 允许爬虫抓取到搜索引擎，建议 true
-hasCJKLanguage: true # 自动检测是否包含 中文日文韩文 如果文章中使用了很多中文引号的话可以开启
-paginate: 10  # 每页显示的文章数
+enableInlineShortcodes: true
+enableEmoji: true
+enableRobotsTXT: true
+hasCJKLanguage: true
+paginate: 10
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 pygmentsUseClasses: true
-# relativeURLs: true
 mainsections: ["posts"]
 
 minify:
   disableXML: true
-  # minifyOutput: true
 
 menu:
   main:
-    - name: Archive
+    - name: 归档
       url: archives
       weight: 5
-    - name: Search
+    - name: 搜索
       url: search/
       weight: 10
-    - name: Tags
+    - name: 标签
       url: tags/
       weight: 15
-    - name: about
+    - name: 关于
       url: about/
       weight: 20
     - name: RSS
@@ -44,15 +42,13 @@ outputs:
     - JSON
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: 
-  author: somebody
+  env: production
+  description: qmhdl1027 的个人博客 - 技术笔记与生活记录
+  author: qmhdl1027
 
   defaultTheme: auto
-  # disableThemeToggle: true
   ShowShareButtons: false
   ShowReadingTime: true
-  # disableSpecial1stPost: true
   displayFullLangName: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -60,31 +56,27 @@ params:
   ShowRssButtonInSectionTermList: false
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  ShowToc: false # 显示目录
-  TocOpen: false # 自动展开目录
-  ShowFullTextinRSS: true # RSS 显示全文
-  hideFooter: false # 隐藏页脚
-  ShowLastMod: false #显示文章更新时间
+  ShowToc: true
+  TocOpen: false
+  ShowFullTextinRSS: true
+  hideFooter: false
+  ShowLastMod: false
 
   homeInfoParams:
-    Title: "一个空的 hugo 站点"
+    Title: "欢迎来到 qmhdl1027 的博客"
     Content: >
-      这些文字可以在 config.yml 文件里更改。
+      这里记录技术学习、项目实践与生活思考。
 
   profileMode:
     enabled: false
     title: PaperMod
     imageUrl: "#"
     imageTitle: my image
-    # imageWidth: 120
-    # imageHeight: 120
     buttons:
-      - name: Archives
+      - name: 归档
         url: archives
-      - name: Tags
+      - name: 标签
         url: tags
 
   assets:
     disableHLJS: true
-
-
